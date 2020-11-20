@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qui suis-je?</title>
+  <style>
+    h1 {
+      text-align: center;
+      margin-top: 100px;
+      font-family: 'Comic Sans Ms';
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      position: absolute;
+      width: 50vh;
+    }
+
+    @keyframes from-invisible {
+      0% { opacity: 0 }
+      25% { opacity: 1 }
+      50% { opacity: 0 }
+      100% { opacity: 1 }
+    }
+
+    @keyframes from-visible {
+      0% { opacity: 1 }
+      25% { opacity: 0 }
+      50% { opacity: 1 }
+      100% { opacity: 0 }
+    }
+
+    .jc {
+      animation: from-visible 10s infinite;
+    }
+
+    .mt {
+      animation: from-invisible 10s infinite;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Josée ou Marion?</h1>
+  <main>
+    <img class="jc" src="./jc.png" />
+    <img class="mt" src="./mt.png" />
+  </main>
+</body>
+</html>
